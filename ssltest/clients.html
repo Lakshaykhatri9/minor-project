@@ -1,0 +1,1866 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Qualys SSL Labs - Projects / User Agent Capabilities</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+    <link href="../includes/ssllabs.css" rel="styleSheet" type="text/css">
+    <link href="../includes/report.css" rel="styleSheet" type="text/css">
+    <link href="../includes/main.css" rel="styleSheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../includes/stupidtable.min.js"></script>
+    <script type="text/javascript" src="../includes/main.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPWDSJ"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MPWDSJ');</script>
+        <!-- SHA 256 'sha256-khWDFUo/+h2RpY43Yb/fpJ+pKAOhiJcwX8XN0zNVIs4='-->
+    <!-- End Google Tag Manager -->
+<link href="https://www.qualys.com/asset/stylesheet/ssllabs-banner.css" rel="styleSheet" type="text/css">
+<script type="text/javascript" src="https://www.qualys.com/asset/script/ssllabs-banner.js" ></script>
+<div id="page">
+        <div id="promo-banner"></div>
+
+
+        <div id="header">
+
+            <div id="logo">
+                    <a href="../index.html" rel="noreferrer"><img src="https://ssllabs.com/images/qualys-ssl-labs-logo.png" width="341"
+                                                                height="55" alt="SSL Labs logo" title="SSL Labs logo"></a>
+            </div>
+
+            <div id="navigation">
+                <a class="link" href="../index.html" rel="noreferrer">Home</a>
+                <a class="link" href="../projects/index.html" rel="noreferrer">Projects</a>
+                <a class="link" href="https://www.qualys.com/free-trial/" rel="noreferrer">Qualys Free Trial</a>
+                <a class="link" href="../about/contact.html" rel="noreferrer">Contact</a>
+            </div>
+            <br clear="all"/>
+        </div>
+
+<div id="breadcrumbs">
+        <b>You are here:&nbsp;</b>
+        <a href="../index.html">Home</a>
+        &gt; <a href="../projects/index.html">Projects</a>
+        &gt; User Agent Capabilities
+</div>
+
+<div id="main">
+    <div>
+        <h1 class="floatLeft">User Agent Capabilities</h1>
+        <a href="https://api.ssllabs.com/api/v3/getClients"><div class="clientsJsonLink">JSON</div></a>
+    </div>
+
+    <div class="floatRight"><br><a href="viewMyClient.html">Test Your Browser&nbsp;&raquo;</a></div>
+    <br clear="all"/>
+
+
+    <table id="multiTable" border=0 cellpadding=10>
+    <thead>
+    <tr>
+        <th data-sort="string">User agent</th>
+        <th data-sort="string">TLS 1.3</th>
+        <th data-sort="string">TLS 1.2</th>
+        <th data-sort="string">TLS 1.1</th>
+        <th data-sort="string">TLS 1.0</th>
+        <th data-sort="string">SNI</th>
+        <th data-sort="string">Forward Secrecy</th>
+        <th data-sort="string">Stapling</th>
+        <th data-sort="string">Session Tickets</th>
+    </tr>
+    </thead>
+
+
+
+    <tr>
+        <td><a href="viewClient.html@name=Android&amp;version=2.3.7&amp;key=56">Android 2.3.7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Android&amp;version=4.0.4&amp;key=58">Android 4.0.4</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Android&amp;version=4.1.1&amp;key=59">Android 4.1.1</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Android&amp;version=4.2.2&amp;key=60">Android 4.2.2</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Android&amp;version=4.3&amp;key=61">Android 4.3</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Android&amp;version=4.4.2&amp;key=62">Android 4.4.2</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Android&amp;version=5.0.0&amp;key=88">Android 5.0.0</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Android&amp;version=6.0&amp;key=129">Android 6.0</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Android&amp;version=7.0&amp;key=139">Android 7.0</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Android&amp;version=7.0&amp;key=167">Android 7.0</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Android&amp;version=8.0&amp;key=168">Android 8.0</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Android&amp;version=8.1&amp;key=157">Android 8.1</a></td>
+        <td><span class="h">Yes </span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Android&amp;version=9.0&amp;key=158">Android 9.0</a></td>
+        <td><span class="h">Yes </span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Baidu&amp;version=Jan&#32;2015&amp;key=94">Baidu Jan 2015</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=BingBot&amp;version=Dec&#32;2013&amp;key=41">BingBot Dec 2013</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=BingPreview&amp;version=Dec&#32;2013&amp;key=47">BingPreview Dec 2013</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=BingPreview&amp;version=Jun&#32;2014&amp;key=74">BingPreview Jun 2014</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=BingPreview&amp;version=Jan&#32;2015&amp;key=91">BingPreview Jan 2015</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=27&amp;platform=Win&#32;7&amp;key=10">Chrome 27 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=28&amp;platform=Win&#32;7&amp;key=11">Chrome 28 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=29&amp;platform=Win&#32;7&amp;key=12">Chrome 29 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=30&amp;platform=Win&#32;7&amp;key=38">Chrome 30 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=31&amp;platform=Win&#32;7&amp;key=46">Chrome 31 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=32&amp;platform=Win&#32;7&amp;key=49">Chrome 32 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=33&amp;platform=Win&#32;7&amp;key=54">Chrome 33 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=34&amp;platform=OS&#32;X&amp;key=66">Chrome 34 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=35&amp;platform=Win&#32;7&amp;key=69">Chrome 35 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=36&amp;platform=Win&#32;7&amp;key=76">Chrome 36 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=37&amp;platform=OS&#32;X&amp;key=80">Chrome 37 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=39&amp;platform=OS&#32;X&amp;key=82">Chrome 39 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=40&amp;platform=OS&#32;X&amp;key=89">Chrome 40 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=42&amp;platform=OS&#32;X&amp;key=105">Chrome 42 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=43&amp;platform=OS&#32;X&amp;key=108">Chrome 43 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=45&amp;platform=OS&#32;X&amp;key=115">Chrome 45 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=47&amp;platform=OS&#32;X&amp;key=117">Chrome 47 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=48&amp;platform=OS&#32;X&amp;key=122">Chrome 48 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=49&amp;platform=Win&#32;7&amp;key=124">Chrome 49 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=49&amp;platform=XP&#32;SP3&amp;key=136">Chrome 49 / XP SP3</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=50&amp;platform=Win&#32;7&amp;key=125">Chrome 50 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=51&amp;platform=Win&#32;7&amp;key=126">Chrome 51 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=57&amp;platform=Win&#32;7&amp;key=141">Chrome 57 / Win 7</a></td>
+        <td><span class="h">Yes             (Draft 18)</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=65&amp;platform=Win&#32;7&amp;key=149">Chrome 65 / Win 7</a></td>
+        <td><span class="h">Yes             (Draft 23)</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=69&amp;platform=Win&#32;7&amp;key=152">Chrome 69 / Win 7</a></td>
+        <td><span class="h">Yes             (Draft 28)</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=70&amp;platform=Win&#32;10&amp;key=153">Chrome 70 / Win 10</a></td>
+        <td><span class="h">Yes </span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=75&amp;platform=Win&#32;10&amp;key=154">Chrome 75 / Win 10</a></td>
+        <td><span class="h">Yes </span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Chrome&amp;version=80&amp;platform=Win&#32;10&amp;key=170">Chrome 80 / Win 10</a></td>
+        <td><span class="h">Yes </span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=21&amp;platform=Win&#32;7&amp;key=13">Firefox 21 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=10.0.12&#32;ESR&amp;platform=Win&#32;7&amp;key=14">Firefox 10.0.12 ESR / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=17.0.7&#32;ESR&amp;platform=Win&#32;7&amp;key=15">Firefox 17.0.7 ESR / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=24.2.0&#32;ESR&amp;platform=Win&#32;7&amp;key=48">Firefox 24.2.0 ESR / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=31.3.0&#32;ESR&amp;platform=Win&#32;7&amp;key=84">Firefox 31.3.0 ESR / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=21&amp;platform=Fedora&#32;19&amp;key=16">Firefox 21 / Fedora 19</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=22&amp;platform=Win&#32;7&amp;key=17">Firefox 22 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=24&amp;platform=Win&#32;7&amp;key=37">Firefox 24 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=26&amp;platform=Win&#32;8&amp;key=50">Firefox 26 / Win 8</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=27&amp;platform=Win&#32;8&amp;key=51">Firefox 27 / Win 8</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=29&amp;platform=OS&#32;X&amp;key=67">Firefox 29 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=30&amp;platform=OS&#32;X&amp;key=70">Firefox 30 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=31&amp;platform=OS&#32;X&amp;key=77">Firefox 31 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=32&amp;platform=OS&#32;X&amp;key=79">Firefox 32 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=34&amp;platform=OS&#32;X&amp;key=83">Firefox 34 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=35&amp;platform=OS&#32;X&amp;key=90">Firefox 35 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=37&amp;platform=OS&#32;X&amp;key=103">Firefox 37 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=39&amp;platform=OS&#32;X&amp;key=109">Firefox 39 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=41&amp;platform=OS&#32;X&amp;key=116">Firefox 41 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=42&amp;platform=OS&#32;X&amp;key=118">Firefox 42 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=44&amp;platform=OS&#32;X&amp;key=123">Firefox 44 / OS X</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=45&amp;platform=Win&#32;7&amp;key=127">Firefox 45 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=46&amp;platform=Win&#32;7&amp;key=128">Firefox 46 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=47&amp;platform=Win&#32;7&amp;key=132">Firefox 47 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=49&amp;platform=XP&#32;SP3&amp;key=137">Firefox 49 / XP SP3</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=49&amp;platform=Win&#32;7&amp;key=135">Firefox 49 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=53&amp;platform=Win&#32;7&amp;key=142">Firefox 53 / Win 7</a></td>
+        <td><span class="h">Yes             (Draft 18)</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=59&amp;platform=Win&#32;7&amp;key=150">Firefox 59 / Win 7</a></td>
+        <td><span class="h">Yes             (Draft 23)</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=62&amp;platform=Win&#32;7&amp;key=151">Firefox 62 / Win 7</a></td>
+        <td><span class="h">Yes             (Draft 28)</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=67&amp;platform=Win&#32;10&amp;key=155">Firefox 67 / Win 10</a></td>
+        <td><span class="h">Yes </span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Firefox&amp;version=73&amp;platform=Win&#32;10&amp;key=171">Firefox 73 / Win 10</a></td>
+        <td><span class="h">Yes </span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Googlebot&amp;version=Oct&#32;2013&amp;key=40">Googlebot Oct 2013</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Googlebot&amp;version=Jun&#32;2014&amp;key=72">Googlebot Jun 2014</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Googlebot&amp;version=Feb&#32;2015&amp;key=97">Googlebot Feb 2015</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Googlebot&amp;version=Feb&#32;2018&amp;key=145">Googlebot Feb 2018</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=6&amp;platform=XP&amp;key=18">IE 6 / XP</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=6&amp;platform=XP&amp;key=100">IE 6 / XP</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=7&amp;platform=Vista&amp;key=19">IE 7 / Vista</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=8&amp;platform=XP&amp;key=20">IE 8 / XP</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=8&amp;platform=XP&amp;key=101">IE 8 / XP</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=8&amp;platform=Win&#32;7&amp;key=21">IE 8 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=9&amp;platform=Win&#32;7&amp;key=22">IE 9 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=8-10&amp;platform=Win&#32;7&amp;key=23">IE 8-10 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=8-10&amp;platform=Win&#32;7&amp;key=113">IE 8-10 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;7&amp;key=36">IE 11 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;7&amp;key=95">IE 11 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;7&amp;key=102">IE 11 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;7&amp;key=133">IE 11 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;7&amp;key=143">IE 11 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;10&#32;Preview&amp;key=81">IE 11 / Win 10 Preview</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;8.1&amp;key=24">IE 11 / Win 8.1</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;8.1&amp;key=71">IE 11 / Win 8.1</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;8.1&amp;key=96">IE 11 / Win 8.1</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;8.1&amp;key=104">IE 11 / Win 8.1</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;8.1&amp;key=134">IE 11 / Win 8.1</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=10&amp;platform=Win&#32;Phone&#32;8.0&amp;key=64">IE 10 / Win Phone 8.0</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;Phone&#32;8.1&amp;key=65">IE 11 / Win Phone 8.1</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;Phone&#32;8.1&#32;Update&amp;key=106">IE 11 / Win Phone 8.1 Update</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;10&amp;key=107">IE 11 / Win 10</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=IE&amp;version=11&amp;platform=Win&#32;10&amp;key=131">IE 11 / Win 10</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Edge&amp;version=12&amp;platform=Win&#32;10&amp;key=110">Edge 12 / Win 10</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Edge&amp;version=13&amp;platform=Win&#32;10&amp;key=119">Edge 13 / Win 10</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Edge&amp;version=13&amp;platform=Win&#32;10&amp;key=130">Edge 13 / Win 10</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Edge&amp;version=15&amp;platform=Win&#32;10&amp;key=144">Edge 15 / Win 10</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Edge&amp;version=16&amp;platform=Win&#32;10&amp;key=159">Edge 16 / Win 10</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Edge&amp;version=18&amp;platform=Win&#32;10&amp;key=160">Edge 18 / Win 10</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Edge&amp;version=13&amp;platform=Win&#32;Phone&#32;10&amp;key=120">Edge 13 / Win Phone 10</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Java&amp;version=6u45&amp;key=25">Java 6u45</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Java&amp;version=7u25&amp;key=26">Java 7u25</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Java&amp;version=8b132&amp;key=53">Java 8b132</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Java&amp;version=8u31&amp;key=86">Java 8u31</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Java&amp;version=8u111&amp;key=146">Java 8u111</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Java&amp;version=8u161&amp;key=147">Java 8u161</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Java&amp;version=9.0.4&amp;key=148">Java 9.0.4</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Java&amp;version=11.0.3&amp;key=162">Java 11.0.3</a></td>
+        <td><span class="h">Yes </span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Java&amp;version=12.0.1&amp;key=163">Java 12.0.1</a></td>
+        <td><span class="h">Yes </span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=OpenSSL&amp;version=0.9.8y&amp;key=27">OpenSSL 0.9.8y</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=OpenSSL&amp;version=1.0.1h&amp;key=28">OpenSSL 1.0.1h</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=OpenSSL&amp;version=1.0.1l&amp;key=99">OpenSSL 1.0.1l</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=OpenSSL&amp;version=1.0.2e&amp;key=121">OpenSSL 1.0.2e</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=OpenSSL&amp;version=1.0.2s&amp;key=164">OpenSSL 1.0.2s</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=OpenSSL&amp;version=1.1.0k&amp;key=169">OpenSSL 1.1.0k</a></td>
+        <td><span class="h">Yes             (Draft 20)</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=OpenSSL&amp;version=1.1.1c&amp;key=165">OpenSSL 1.1.1c</a></td>
+        <td><span class="h">Yes </span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Opera&amp;version=12.15&amp;platform=Win&#32;7&amp;key=29">Opera 12.15 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Opera&amp;version=15&amp;platform=Win&#32;7&amp;key=30">Opera 15 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Opera&amp;version=16&amp;platform=Win&#32;7&amp;key=39">Opera 16 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Opera&amp;version=17&amp;platform=Win&#32;7&amp;key=43">Opera 17 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Opera&amp;version=60&amp;platform=Win&#32;10&amp;key=156">Opera 60 / Win 10</a></td>
+        <td><span class="h">Yes </span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Opera&amp;version=67&amp;platform=Win&#32;10&amp;key=172">Opera 67 / Win 10</a></td>
+        <td><span class="h">Yes </span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=5&amp;platform=iOS&#32;5.1.1&amp;key=31">Safari 5 / iOS 5.1.1</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=5.1.9&amp;platform=OS&#32;X&#32;10.6.8&amp;key=32">Safari 5.1.9 / OS X 10.6.8</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=6&amp;platform=iOS&#32;6.0.1&amp;key=33">Safari 6 / iOS 6.0.1</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=6.0.4&amp;platform=OS&#32;X&#32;10.8.4&amp;key=34">Safari 6.0.4 / OS X 10.8.4</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=7&amp;platform=iOS&#32;7.1&amp;key=63">Safari 7 / iOS 7.1</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=8&amp;platform=iOS&#32;8.0&#32;Beta&amp;key=75">Safari 8 / iOS 8.0 Beta</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=7&amp;platform=OS&#32;X&#32;10.9&amp;key=35">Safari 7 / OS X 10.9</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=8&amp;platform=iOS&#32;8.4&amp;key=85">Safari 8 / iOS 8.4</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=8&amp;platform=OS&#32;X&#32;10.10&amp;key=87">Safari 8 / OS X 10.10</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=9&amp;platform=iOS&#32;9&amp;key=114">Safari 9 / iOS 9</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=9&amp;platform=OS&#32;X&#32;10.11&amp;key=111">Safari 9 / OS X 10.11</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=10&amp;platform=iOS&#32;10&amp;key=140">Safari 10 / iOS 10</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=10&amp;platform=OS&#32;X&#32;10.12&amp;key=138">Safari 10 / OS X 10.12</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=12.1.2&amp;platform=MacOS&#32;10.14.6&#32;Beta&amp;key=161">Safari 12.1.2 / MacOS 10.14.6 Beta</a></td>
+        <td><span class="h">Yes </span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Safari&amp;version=12.1.1&amp;platform=iOS&#32;12.3.1&amp;key=166">Safari 12.1.1 / iOS 12.3.1</a></td>
+        <td><span class="h">Yes </span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Apple&#32;ATS&amp;version=9&amp;platform=iOS&#32;9&amp;key=112">Apple ATS 9 / iOS 9</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Tor&amp;version=17.0.9&amp;platform=Win&#32;7&amp;key=44">Tor 17.0.9 / Win 7</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Yahoo&#32;Slurp&amp;version=Oct&#32;2013&amp;key=42">Yahoo Slurp Oct 2013</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Yahoo&#32;Slurp&amp;version=Jun&#32;2014&amp;key=73">Yahoo Slurp Jun 2014</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=Yahoo&#32;Slurp&amp;version=Jan&#32;2015&amp;key=92">Yahoo Slurp Jan 2015</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=YandexBot&amp;version=3.0&amp;key=52">YandexBot 3.0</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="w">No</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=YandexBot&amp;version=May&#32;2014&amp;key=68">YandexBot May 2014</a></td>
+        <td><span>No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="e">No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=YandexBot&amp;version=Sep&#32;2014&amp;key=78">YandexBot Sep 2014</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    <tr>
+        <td><a href="viewClient.html@name=YandexBot&amp;version=Jan&#32;2015&amp;key=93">YandexBot Jan 2015</a></td>
+        <td><span>No</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="h">Yes</span></td>
+        <td><span class="w">No</span></td>
+        <td><span class="h">Yes</span></td>
+    </tr>
+    </table>
+
+    <p class="greyColor">
+        (*) Tested with default settings. Some platforms can be manually configured to enable more features and better security.
+    </p>
+</div>
+
+
+</div>
+
+<div id="pageEnd">
+<div id="copyright">
+	<table width=1050 border=0 cellpadding=5 cellspacing=0><tr>
+	<td class="footer">
+    Copyright &copy; 2009-2024 <a href="https://www.qualys.com">Qualys, Inc</A>. All Rights Reserved. <a href="https://www.qualys.com/company/privacy/">Privacy Policy</A>.
+    </td><td align=right class="footer">
+    <a href="../about/terms.html" rel="noreferrer">Terms and Conditions</a>
+    </td></tr>
+    <tr>
+        <td class="footer">
+            <a href="https://www.qualys.com/free-trial/">Try Qualys for free!</a> Experience the award-winning
+            <a href="https://www.qualys.com/cloud-platform/">Qualys Cloud Platform</a> and the entire collection of
+            <a href="https://www.qualys.com/apps/">Qualys Cloud Apps</a>, including
+            <a href="https://www.qualys.com/certview/">certificate security</a> solutions.
+    </td></tr>
+    </table>
+</div>
+</div>
+</body>
+</html>

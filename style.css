@@ -62,8 +62,8 @@
 }
 
 .logo-div{
-  height: 4rem;
-  width: 4rem;
+  height: 6rem;
+  width: 6rem;
 }
 
 #slideContainer {
@@ -214,7 +214,12 @@ img {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 400px;
+}
+
+.box:hover{
+  box-shadow: 0 0 10px #000;
+  transition: 0.3s ease;
 }
 
 .box h3 {
@@ -240,3 +245,109 @@ img {
   margin-bottom: 30px;
   color: #333;
 }
+
+
+.footer {
+  background-color: #0d1b2a;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #d0d6e2;
+}
+
+.footer-logo {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 100px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-links h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: #d0d6e2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+  color: #ffffff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.association {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.association img {
+  width: 100px;
+}
+
+.footer-bottom {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  color: #a0aec0;
+}
+
+.footer-bottom a {
+  color: #a0aec0;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+  color: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+</style>

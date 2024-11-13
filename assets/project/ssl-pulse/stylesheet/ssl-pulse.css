@@ -1,0 +1,169 @@
+/* Main Container */
+#sslpulse-container { font-family: Helvetica,Arial,sans-serif; color: #333333; }
+
+/* Header/Logo */
+#sslpulse-header { color: #333333; margin-bottom: 16px; }
+.sslpulse-header-title { float: left; font-weight: bold; font-size: 36px; }
+.sslpulse-header-subtitle { clear: left; font-size: 16px; margin-bottom: 20px; line-height: 24px; }
+
+.sslpulse-heading { color: #333333; font-weight: bold; font-size: 26px; margin-bottom: 15px; clear: both; margin-top: 25px; xpadding-bottom: 10px; xborder-bottom: 2px solid #ddd; }
+
+/* Summary Section */
+#sslpulse-published-date { font-size: 30px; line-height: 38px; color: #4b4b4b; margin-bottom: 20px; width: 100%; font-weight: bold; }
+#sslpulse-published-date .date { font-weight: bold; color: #40a0cf; }
+
+/* Buttons */
+button.sslpulse-nav { cursor: pointer; display: none; color: #ffffff; border: none; background-color: #40a0cf; padding: 12px; width: auto; margin: 0; float:left; }
+button.sslpulse-nav:hover { opacity: 0.9; }
+button.sslpulse-nav .icon { display: block; height: 12px;  background-image: url('../image/button_sprite.png'); background-repeat: no-repeat; line-height: 12px; font-size: 12px; }
+button.sslpulse-nav:disabled, button.sslpulse-nav.disabled { cursor: default; background-color: #eaeaf7; }
+#btnPrev { padding-right: 15px; width: 100px; border-radius: 4px 0 0 4px;  text-align: right; margin-right: 1px; }
+#btnNext { padding-left: 15px; width: 100px; border-radius: 0 4px 4px 0; text-align: left; }
+#btnPrev .icon { background-position: 0 0; padding-left: 20px; }
+#btnNext .icon { background-position: 100% -12px; padding-right: 20px; }
+
+/* Column Layout */
+.sslpulse-colgroup { clear: both; }
+.sslpulse-leftcolumn { float: left; width: 49%; margin-right: 1%; }
+.sslpulse-rightcolumn  { float: left; width: 49%; margin-left: 1%; }
+
+/* Chart Layout */
+.sslpulse-chart-wrapper { margin-bottom: 35px;  border: 2px solid #dadae7; border-radius: 4px; }
+.sslpulse-chart-header { height: 45px; font-size: 18px; line-height: 47px; font-weight: bold; margin: 2px; border-bottom: 1px solid #dadae7; padding: 0 12px; }
+.sslpulse-chart-header-info { background: url('../image/info.png') transparent center center no-repeat; width: 20px; height: 23px; float: right; margin-top: 10px; cursor: pointer; }
+.sslpulse-chart-wrapper-inner { padding: 20px; font-size: 14px; font-weight: normal; }
+
+.sslpulse-chart-wrapper.largechart { height: 350px; min-height: 350px; overflow: hidden; }
+.sslpulse-chart-wrapper.largechart .sslpulse-chart-canvas { min-height: 260px; }
+
+.sslpulse-chart-wrapper.mediumchart { height: 310px; overflow: hidden; }
+.sslpulse-chart-wrapper.mediumchart .sslpulse-chart-canvas { height: 220px; }
+
+.sslpulse-chart-wrapper.smallchart { height: 290px; min-height: 290px; overflow: hidden; }
+.sslpulse-chart-wrapper.smallchart .sslpulse-chart-canvas { height: 200px; }
+
+.sslpulse-chart-wrapper.keyfinding { height: 161px; margin-bottom: 24px; overflow: hidden; }
+.sslpulse-chart-wrapper.keyfinding.no-data .data { display:none; }
+.sslpulse-chart-wrapper.keyfinding .empty-text { display:none; text-align:center; }
+.sslpulse-chart-wrapper.keyfinding.no-data .empty-text { display:block; }
+
+.sslpulse-chart-wrapper.empty-text .sslpulse-chart-canvas { text-align: center; }
+.sslpulse-chart-wrapper.empty-text .sslpulse-chart-canvas p { margin: 0; }
+
+.sslpulse-chart-canvas { position: relative;  }
+.sslpulse-chart-wrapper-inner { position: relative; }
+
+/* Chartless Data-points */
+.sslpulse-keyfinding-value { float:left; font-size:40px; font-weight:bold; padding: 7px 0; margin-right:15px; }
+.sslpulse-keyfinding-value.negative { color: #b30013; }
+.sslpulse-keyfinding-value.positive { color: #00853a; }
+.sslpulse-keyfinding-text { float:left; line-height: 1.30em; }
+
+.sslpulse-keyfinding-value-pct,
+.sslpulse-keyfinding-value-prev { display: block; clear: left; font-size: 13px; line-height: 1em; padding-top: 4px; }
+.sslpulse-keyfinding-value-pct span,
+.sslpulse-keyfinding-value-prev span { font-weight: bold; font-size: 12px; margin-right: 5px; }
+.sslpulse-keyfinding-value-pct span span { margin-right: 0; margin-left: 5px; }
+
+/* Tooltips */
+.sslpulse-chart-tooltip strong { color: #000000; font-weight: bold; }
+.sslpulse-chart-tooltip-header { margin-bottom: 5px; font-weight: bold; text-decoration: underline; }
+.sslpulse-chart-tooltip-footer { margin-top: 5px; font-weight: bold; }
+.sslpulse-chart-tooltip-bodyprev { color: #333333; font-weight: bold; }
+
+.sslpulse-tooltip { display: none; font-size: 14px; width: 220px; padding: 15px; color: #000000; background-color: #ffffdd; border-radius: 4px; border: 1px solid #dadae7; z-index: 99; line-height: 20px; font-weight: normal; box-shadow: 1px 1px 3px rgba(160, 160, 160, 0.4); }
+.sslpulse-tooltip-title { font-weight: bold; margin-bottom: 5px; display: block; }
+.sslpulse-tooltip p { margin-top: 0; margin-bottom: 0; line-height: 1.4em; }
+.sslpulse-tooltip a { text-decoration: none; color: #074178; font-weight: bold; }
+
+/* General */
+.ui-helper-clear { clear: both; height: 0; line-height: 0; }
+.ui-helper-float-left { float: left; }
+.ui-helper-float-right { float: right; }
+.ui-helper-page-break { display: none; }
+
+@media print
+{
+    #btnPrev, #btnNext { display: none !important; }
+    .ui-helper-page-break { page-break-before: always; height: 25px; display: block; }
+}
+
+.ssl-pulse-title {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 44px;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #40a0cf;
+}
+
+.ssl-pulse-title span {
+    color: #40a0cf;
+}
+
+.ssl-pulse-navigation {
+    float: right;
+    padding: 16px 0;
+    padding-left: 5px;
+    background: #fff;
+}
+
+.ssl-pulse-navigation a {
+    display: inline-block;
+    padding: 12px 24px;
+    float: left;
+    line-height: 1.4em;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 4px 0px 0px 4px;
+    background: #eaeaf7;
+    color: #40406f;
+    position: relative;
+}
+
+.ssl-pulse-navigation a:hover {
+    background: #f6f6ff;
+    color: #40a0cf;
+    text-decoration: none;
+}
+
+.ssl-pulse-navigation a:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.ssl-pulse-navigation a.active {
+    background-color: #40a0cf;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sslpulse-comparison{
+    margin:0;
+    text-align:center;
+}
+
+.sslpulse-spinner {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 6px dotted #40a0cf;
+    border-radius: 32px;
+    background: transparent;
+    left: calc(50% - 16px);
+    top: calc(50% - 32px);
+    -webkit-animation: spin 3s linear infinite;
+    -moz-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% { -moz-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+}

@@ -1,0 +1,930 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+<head>
+	<title>Qualys SSL Labs - Projects / SSL Client Test</title>
+
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+	<link href="https://clienttest.ssllabs.com:8443/includes/ssllabs.css" rel="styleSheet" type="text/css">
+	<link href="https://clienttest.ssllabs.com:8443/includes/report.css" rel="styleSheet" type="text/css">
+	<link href="https://clienttest.ssllabs.com:8443/includes/main.css" rel="styleSheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPWDSJ"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MPWDSJ');</script>
+        <!-- SHA 256 'sha256-khWDFUo/+h2RpY43Yb/fpJ+pKAOhiJcwX8XN0zNVIs4='-->
+    <!-- End Google Tag Manager -->
+<link href="https://www.qualys.com/asset/stylesheet/ssllabs-banner.css" rel="styleSheet" type="text/css">
+<script type="text/javascript" src="https://www.qualys.com/asset/script/ssllabs-banner.js" ></script>
+<div id="page">
+        <div id="promo-banner"></div>
+
+
+        <div id="header">
+
+            <div id="logo">
+                    <a href="../index.html" rel="noreferrer"><img src="https://ssllabs.com/images/qualys-ssl-labs-logo.png" width="341"
+                                                                height="55" alt="SSL Labs logo" title="SSL Labs logo"></a>
+            </div>
+
+            <div id="navigation">
+                <a class="link" href="../index.html" rel="noreferrer">Home</a>
+                <a class="link" href="../projects/index.html" rel="noreferrer">Projects</a>
+                <a class="link" href="https://www.qualys.com/free-trial/" rel="noreferrer">Qualys Free Trial</a>
+                <a class="link" href="../about/contact.html" rel="noreferrer">Contact</a>
+            </div>
+            <br clear="all"/>
+        </div>
+
+	<div id="breadcrumbs">
+        <b>You are here:&nbsp;</b>
+        <a href="../index.html">Home</a>
+        	&gt; <a href="../projects/index.html">Projects</a>
+        	&gt; SSL Client Test 
+	</div>
+
+<div id="main">
+
+    <div class="floatLeft">
+	<div class="reportTitle report-title-style">SSL/TLS Capabilities of Your Browser</div>
+<div class="reportTime width-650"><b>User Agent:</b> Wget&#47;1.21.3</div>    </div>
+    <div class="floatRight"><br><a href="clients.html">Other User Agents&nbsp;&raquo;</a></div>
+    <br clear="all"/>
+
+    
+    <div align="center">
+
+
+    
+    
+    <noscript>
+        <div id=warningBox class="warning-box-line-height">
+        <b>Without JavaScript, the following tests will not run:</b>
+        (1) Accurate protocol support, (2) SSL 3 POODLE vulnerability, (3) mixed content handling,
+            (4) TLS authentication bug in Apple's products, and (5) the FREAK attack.
+        Please enable JavaScript for best results.
+        </ul>
+        </div>
+        <br>
+    </noscript>
+
+    
+    <div id="mixedCSSHiddenDiv1" class="display-none"></div>
+    <div id="mixedCSSHiddenDiv2" class="display-none"></div>
+    <iframe src="http://plaintext.ssllabs.com/plaintext/frame.html" class="display-none" width="0" height="0"></iframe>
+
+        <div id="hiddenImagesDiv" class="display-none"></div>
+    <div id="protocolSupportDiv" class="display-none"></div>
+
+
+    
+    <div class="reportSection" id="protocolTestDiv">
+        <div class="sectionTitle" id="protocolTestHeading">Protocol Support</div>
+        <div class="sectionBody">
+            <div id="protocolTestMsg"><img src="https://clienttest.ssllabs.com:8443/images/progress-indicator.gif" width=16 height=16> Please wait, checking protocol support...</div>
+            <div id="protocolTestMsgNotes"></div>
+        </div>
+    </div>
+
+        <div class="reportSection" id="curveBallTestDiv">
+            <div class="sectionTitle">CVE-2020-0601 (CurveBall) Vulnerability</div>
+            <div class="sectionBody">
+                <div id="curveBallTestMsg"><img src="https://clienttest.ssllabs.com:8443/images/progress-indicator.gif" width=16 height=16> Please wait, checking if your user agent is vulnerable...</div>
+                <div id="curveBallTestMsgNotes">
+                    For more information about the CVE-2020-0601 (CurveBall) Vulnerability, please go to
+                    <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0601">CVE-2020-0601</a>.<br>
+                    To test manually, click <a href="https://www.ssllabs.com:10446/">here</a>.
+                    Your user agent is not vulnerable if it fails to connect to the site.
+				</div>
+            </div>
+        </div>
+
+        <div class="reportSection" id="jamTestDiv">
+            <div class="sectionTitle">Logjam Vulnerability</div>
+            <div class="sectionBody">
+                <div id="jamTestMsg"><img src="https://clienttest.ssllabs.com:8443/images/progress-indicator.gif" width=16 height=16> Please wait, checking if your user agent is vulnerable...</div>
+                <div id="jamTestMsgNotes">
+                    For more information about the Logjam attack, please go to
+                    <a href="https://weakdh.org">weakdh.org</a>.<br>
+                    To test manually, click <a href="https://www.ssllabs.com:10445/">here</a>.
+                    Your user agent is not vulnerable if it fails to connect to the site.</div>
+            </div>
+        </div>
+
+        <div class="reportSection" id="freakTestDiv">
+            <div class="sectionTitle">FREAK Vulnerability</div>
+            <div class="sectionBody">
+                <div id="freakTestMsg"><img src="https://clienttest.ssllabs.com:8443/images/progress-indicator.gif" width=16 height=16> Please wait, checking if your user agent is vulnerable...</div>
+                <div id="freakTestMsgNotes">
+                    For more information about the FREAK attack, please go to
+                    <a href="https://www.freakattack.com">www.freakattack.com</a>.<br>
+                    To test manually, click <a href="https://www.ssllabs.com:10444/">here</a>.
+                Your user agent is not vulnerable if it fails to connect to the site.</div>
+            </div>
+        </div>
+
+    <div class="reportSection" id="ssl3TestDiv">
+    <div class="sectionTitle">POODLE Vulnerability</div>
+    <div class="sectionBody">
+        <div id="ssl3TestMsg"><img src="https://clienttest.ssllabs.com:8443/images/progress-indicator.gif" width=16 height=16> Please wait, checking if your user agent is vulnerable...</div>
+        <div id="ssl3TestMsgNotes">For more information about the POODLE attack, please read <a href="https://community.qualys.com/blogs/securitylabs/2014/10/15/ssl-3-is-dead-killed-by-the-poodle-attack">this blog post</a>.</div>
+    </div>
+    </div>
+
+    <div class="reportSection" id="ssl2TestDiv">
+    <div class="sectionTitle">SSL 2 Protocol Support</div>
+    <div class="sectionBody">
+        <div id="ssl2TestMsg"><font color="red">Your user agent supports SSL 2. You should upgrade.</font></div>
+        <div id="ssl2TestMsgNotes">SSL 2 is a very old, obsolete, and insecure version of the SSL protocol. You can usually disable this protocol
+	version in configuration, but modern clients don't support it at all. This really means that you should upgrade your software
+	to a better version.</div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="https://clienttest.ssllabs.com:8443/includes/viewClient.js"></script>
+    <input id="mainsitehost" type="hidden" value=www.ssllabs.com >
+    <input id="plaintextSiteHost" type="hidden" value=plaintext.ssllabs.com >
+	<input id="clientTestSiteHost" type="hidden" value=clienttest.ssllabs.com >
+    <div class="reportSection" id="appleTestDiv">
+    <div class="sectionTitle">iOS and OS X TLS Authentication Vulnerability</div>
+    <div class="sectionBody">
+
+        <div id="appleTestMsg"><img src="https://clienttest.ssllabs.com:8443/images/progress-indicator.gif" width=16 height=16> Please wait, checking if your user agent is vulnerable...</div>
+        <div id="appleTestMsgNotes">To test manually, <a href="https://www.ssllabs.com:10443">click here</a>. If your
+            user agent refuses to connect, you are not vulnerable. This test requires a connection to the SSL Labs
+            server on port 10443. A strict outbound firewall might interfere. You should test Safari running on
+            iOS or OS X. Chrome and Firefox are not vulnerable, even when running on a vulnerable operating system.
+        <a href="https://community.qualys.com/blogs/securitylabs/2014/02/24/ssl-labs-testing-for-apples-tls-authentication-bug"><b>MORE&nbsp;&raquo;</b></a></div>
+
+        <script type="text/javascript" src="https://clienttest.ssllabs.com:8443/includes/viewClient-appleTest.js"></script>
+
+    </div>
+    </div>
+
+    <div class="reportSection">
+	<div class="sectionTitle">Protocol Features</div>
+	<div class="sectionBody">
+
+	<input id="tls13Support" type="hidden" value=772 >
+	<img class="tIcon" src="https://clienttest.ssllabs.com:8443/images/icon-protocol.png" width="65" height="50">
+	<table class="reportTable">
+	<thead>
+	<tr>
+		<td class="tableHead" colspan="2" align="left">Protocols</td>
+	</tr>
+	</thead>
+	<tbody>
+	
+
+    <tr class="tableRow">
+        <td class="tableLeft" id="protocol_tls1_3_label"><font color=green>TLS 1.3</font> </td>
+        <td class="tableRight" id="protocol_tls1_3"><font color=green>Yes</font></span></td>
+    </tr>
+    <tr class="tableRow">
+        <td class="tableLeft" id="protocol_tls1_2_label">TLS 1.2</td>
+        <td class="tableRight" id="protocol_tls1_2">Yes*</td>
+    </tr>
+	<tr class="tableRow">
+		<td class="tableLeft" id="protocol_tls1_1_label">TLS 1.1</td>
+		<td class="tableRight" id="protocol_tls1_1">Yes*</td>
+	</tr>
+	<tr class="tableRow">
+		<td class="tableLeft" id="protocol_tls1_label">TLS 1.0</td>
+		<td class="tableRight" id="protocol_tls1">Yes*</td>
+	</tr>
+	<tr class="tableRow">
+		<td class="tableLeft" id="protocol_ssl3_label">SSL 3</td>
+		<td class="tableRight" id="protocol_ssl3">Yes*</td>
+	</tr>
+	<tr class="tableRow">
+		<td class="tableLeft" id="protocol_ssl2_label">SSL 2</td>
+		<td class="tableRight" id="protocol_ssl2">No</td>			
+	</tr>
+	
+	<noscript>
+    <tr class="tableRow">
+	<td colspan=2 align=left>
+	<span class="color666666">(*) Without JavaScript, this test reliably detects only the highest supported protocol.</span>
+	</td>
+	</tr>
+    </noscript>
+	
+	</tbody>
+	</table>
+	
+	<br><br>
+            
+    <img class="tIcon" src="https://clienttest.ssllabs.com:8443/images/icon-cipher.png" width="65" height="50" alt="">
+	<table class="reportTable">
+		
+	<thead>
+	<tr>
+		<td class="tableHead" colspan="3" align="left">Cipher Suites (in order of preference)</td>
+	</tr>
+	</thead>
+
+	
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_AES_256_GCM_SHA384 (<code>0x1302</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_CHACHA20_POLY1305_SHA256 (<code>0x1303</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_AES_128_GCM_SHA256 (<code>0x1301</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">128</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 (<code>0xc02c</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (<code>0xc030</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_DHE_DSS_WITH_AES_256_GCM_SHA384 (<code>0xa3</code>)</span>
+ &nbsp;
+			<span class=dhParams>Forward Secrecy<sup>2</sup></span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 (<code>0x9f</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 (<code>0xcca9</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (<code>0xcca8</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (<code>0xccaa</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_ECDHE_ECDSA_WITH_AES_256_CCM_8 (<code>0xc0af</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_ECDHE_ECDSA_WITH_AES_256_CCM (<code>0xc0ad</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_DHE_RSA_WITH_AES_256_CCM_8 (<code>0xc0a3</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_DHE_RSA_WITH_AES_256_CCM (<code>0xc09f</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_ECDHE_ECDSA_WITH_ARIA_256_GCM_SHA384 (<code>0xc05d</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_ECDHE_RSA_WITH_ARIA_256_GCM_SHA384 (<code>0xc061</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_DHE_DSS_WITH_ARIA_256_GCM_SHA384 (<code>0xc057</code>)</span>
+ &nbsp;
+			<span class=dhParams>Forward Secrecy<sup>2</sup></span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_DHE_RSA_WITH_ARIA_256_GCM_SHA384 (<code>0xc053</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">256</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 (<code>0xc02b</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">128</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (<code>0xc02f</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">128</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_DHE_DSS_WITH_AES_128_GCM_SHA256 (<code>0xa2</code>)</span>
+ &nbsp;
+			<span class=dhParams>Forward Secrecy<sup>2</sup></span>
+				</td>
+			<td class="tableRight">128</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 (<code>0x9e</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">128</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_ECDHE_ECDSA_WITH_AES_128_CCM_8 (<code>0xc0ae</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">128</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_ECDHE_ECDSA_WITH_AES_128_CCM (<code>0xc0ac</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">128</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_DHE_RSA_WITH_AES_128_CCM_8 (<code>0xc0a2</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">128</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_DHE_RSA_WITH_AES_128_CCM (<code>0xc09e</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">128</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_ECDHE_ECDSA_WITH_ARIA_128_GCM_SHA256 (<code>0xc05c</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">128</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_ECDHE_RSA_WITH_ARIA_128_GCM_SHA256 (<code>0xc060</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">128</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_DHE_DSS_WITH_ARIA_128_GCM_SHA256 (<code>0xc056</code>)</span>
+ &nbsp;
+			<span class=dhParams>Forward Secrecy<sup>2</sup></span>
+				</td>
+			<td class="tableRight">128</td>
+	</tr>
+	<tr>
+				<td class="tableLeft">
+					<span class="color-green">TLS_DHE_RSA_WITH_ARIA_128_GCM_SHA256 (<code>0xc052</code>)</span>
+ &nbsp;
+			<span class="dhParams color-green">Forward Secrecy</span>
+				</td>
+			<td class="tableRight">128</td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 (<code>0xc024</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (<code>0xc028</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 (<code>0x6b</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_DSS_WITH_AES_256_CBC_SHA256 (<code>0x6a</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_CBC_SHA384 (<code>0xc073</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384 (<code>0xc077</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA256 (<code>0xc4</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA256 (<code>0xc3</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 (<code>0xc023</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (<code>0xc027</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 (<code>0x67</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_DSS_WITH_AES_128_CBC_SHA256 (<code>0x40</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_CBC_SHA256 (<code>0xc072</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256 (<code>0xc076</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA256 (<code>0xbe</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA256 (<code>0xbd</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA (<code>0xc00a</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (<code>0xc014</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_RSA_WITH_AES_256_CBC_SHA (<code>0x39</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_DSS_WITH_AES_256_CBC_SHA (<code>0x38</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (<code>0x88</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA (<code>0x87</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA (<code>0xc009</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (<code>0xc013</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_RSA_WITH_AES_128_CBC_SHA (<code>0x33</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_DSS_WITH_AES_128_CBC_SHA (<code>0x32</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (<code>0x45</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA (<code>0x44</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_AES_256_GCM_SHA384 (<code>0x9d</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_AES_256_CCM_8 (<code>0xc0a1</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_AES_256_CCM (<code>0xc09d</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_ARIA_256_GCM_SHA384 (<code>0xc051</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_AES_128_GCM_SHA256 (<code>0x9c</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_AES_128_CCM_8 (<code>0xc0a0</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_AES_128_CCM (<code>0xc09c</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_ARIA_128_GCM_SHA256 (<code>0xc050</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_AES_256_CBC_SHA256 (<code>0x3d</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256 (<code>0xc0</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_AES_128_CBC_SHA256 (<code>0x3c</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256 (<code>0xba</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_AES_256_CBC_SHA (<code>0x35</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (<code>0x84</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>256</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_AES_128_CBC_SHA (<code>0x2f</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft"><font color=#F88017>TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (<code>0x41</code>) &nbsp;<b>WEAK</b></font>
+			</td>
+			<td class="tableRight"><font color=#F88017>128</font></td>
+	</tr>
+	<tr>
+			<td class="tableLeft">TLS_EMPTY_RENEGOTIATION_INFO_SCSV (<code>0xff</code>)</td>
+			<td class="tableRight">-</td>
+	</tr>
+
+	<tr class="tableRow">
+	<td colspan=2 align=left>
+	<span class="color666666">(1) When a browser supports SSL 2, its SSL 2-only suites are shown
+	only on the very first connection to this site. To see the suites,
+        close all browser windows, then open this exact page directly. Don't refresh.</span>
+	</td>
+	</tr>
+	
+	<tr class="tableRow">
+	<td colspan=2 align=left>
+	<span class="color666666">(2) Cannot be used for Forward Secrecy because they require DSA keys, which are effectively limited to 1024 bits.</span>
+	</td>
+	</tr>
+	
+	</table>
+	
+	<br><br>
+	
+	<img class="tIcon" src="https://clienttest.ssllabs.com:8443/images/icon-protocol-details.png" width="65" height="50" alt="">
+	<table class="reportTable">
+	<thead>
+		<tr>
+			<td class="tableHead" colspan="2" align="left">Protocol Details</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="tableRow">
+			<td class="tableLabel" width="250">Server Name Indication (SNI)</td>
+			<td class="tableCell">Yes</td>
+		</tr>
+		
+		<tr class="tableRow">
+			<td class="tableLabel">Secure Renegotiation</td>
+			<td class="tableCell">Yes</td>
+		</tr>
+
+		<tr class="tableRow">
+			<td class="tableLabel"><font color=green>TLS compression</font></td>
+			<td class="tableCell"><font color=green>No</font></td>
+		</tr>
+
+		<tr class="tableRow">
+			<td class="tableLabel">Session tickets</td>
+			<td class="tableCell">Yes</td>
+		</tr>
+
+		<tr class="tableRow">
+			<td class="tableLabel"><font color=#F88017>OCSP stapling</font></td>
+			<td class="tableCell"><font color=#F88017>No</font></td>
+		</tr>
+		
+		<tr class="tableRow">
+			<td class="tableLabel">Signature algorithms</td>
+			<td class="tableCell">
+
+			SHA256/ECDSA,
+			SHA384/ECDSA,
+			SHA512/ECDSA,
+			Ed25519,
+			Ed448,
+			Unknown (0x8)/Unknown (0x9),
+			Unknown (0x8)/Unknown (0xa),
+			Unknown (0x8)/Unknown (0xb),
+			RSA_PSS_SHA256,
+			RSA_PSS_SHA384,
+			RSA_PSS_SHA512,
+			SHA256/RSA,
+			SHA384/RSA,
+			SHA512/RSA,
+			SHA224/ECDSA,
+			SHA1/ECDSA,
+			SHA224/RSA,
+			SHA1/RSA,
+			SHA224/DSA,
+			SHA1/DSA,
+			SHA256/DSA,
+			SHA384/DSA,
+			SHA512/DSA			</td>			
+		</tr>
+		
+		<tr class="tableRow">
+			<td class="tableLabel">Named Groups</td>
+			<td class="tableCell">
+
+			x25519,
+			secp256r1,
+			x448,
+			secp521r1,
+			secp384r1			</td>			
+		</tr>
+		
+		<tr class="tableRow">
+			<td class="tableLabel">Next Protocol Negotiation</td>
+			<td class="tableCell">No</td>			
+		</tr>
+		
+		<tr class="tableRow">
+			<td class="tableLabel" width="250">Application Layer Protocol Negotiation</td>
+			<td class="tableCell">No</td>
+		</tr>
+
+	    <tr class="tableRow">
+    	    <td class="tableLabel"><font color=green>SSL 2 handshake compatibility</font></td>
+    	    <td class="tableCell"><font color=green>No</font></td>
+    	</tr>
+	</tbody>
+	</table> 
+	
+	<br>   
+	
+	</div>
+	</div>
+
+
+    <div class="reportSection display-none" id="mixedDiv">
+        <div class="sectionTitle">Mixed Content Handling</div>
+        <div class="sectionBody">
+
+            <img class="tIcon" src="https://clienttest.ssllabs.com:8443/images/icon-misc.png" width="65" height="50">
+            <table class="reportTable">
+                <thead>
+                <tr>
+                    <td class="tableHead" colspan="3" align="left">Mixed Content Tests</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="tableRow">
+                    <td class="tableLeft">Images</td>
+                    <td class="tableRight width-100">Passive</td>
+                    <td class="tableRight width-100" id="mixedImages">Testing...</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <td class="tableLeft">CSS</td>
+                    <td class="tableRight">Active</td>
+                    <td class="tableRight" id="mixedCssLink">Testing...</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <td class="tableLeft">Scripts</td>
+                    <td class="tableRight">Active</td>
+                    <td class="tableRight" id="mixedScripts">Testing...</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <td class="tableLeft">XMLHttpRequest</td>
+                    <td class="tableRight">Active</td>
+                    <td class="tableRight" id="mixedXhr">Testing...</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <td class="tableLeft">WebSockets</td>
+                    <td class="tableRight">Active</td>
+                    <td class="tableRight" id="mixedWebSockets">Testing...</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <td class="tableLeft">Frames</td>
+                    <td class="tableRight">Active</td>
+                    <td class="tableRight" id="mixedFrame">Testing...</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <td colspan="3" align="left">
+                        <span class="color666666">(1) These tests might cause a mixed content warning in your browser. That's expected.<br></span>
+                        <span class="color666666">(2) If you see a failed test, try to reload the page. If the error persists, please get in touch.</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <table class="reportTable report-table-margin">
+                <thead>
+                <tr>
+                    <td class="tableHead" colspan="3" align="left">Related Functionality</td>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr class="tableRow">
+                    <td class="tableLeft">Upgrade Insecure Requests request header (<a href="https://w3c.github.io/webappsec/specs/upgrade/">more info</a>)</td>
+                        <td class="tableRight">No</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+        </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://clienttest.ssllabs.com:8443/includes/viewClient-clientTest.js"></script>
+
+
+	</div>
+
+          
+</div>
+
+
+</div>
+
+<div id="pageEnd">
+<div id="copyright">
+	<table width=1050 border=0 cellpadding=5 cellspacing=0><tr>
+	<td class="footer">
+    Copyright &copy; 2009-2024 <a href="https://www.qualys.com">Qualys, Inc</A>. All Rights Reserved. <a href="https://www.qualys.com/company/privacy/">Privacy Policy</A>.
+    </td><td align=right class="footer">
+    <a href="../about/terms.html" rel="noreferrer">Terms and Conditions</a>
+    </td></tr>
+    <tr>
+        <td class="footer">
+            <a href="https://www.qualys.com/free-trial/">Try Qualys for free!</a> Experience the award-winning
+            <a href="https://www.qualys.com/cloud-platform/">Qualys Cloud Platform</a> and the entire collection of
+            <a href="https://www.qualys.com/apps/">Qualys Cloud Apps</a>, including
+            <a href="https://www.qualys.com/certview/">certificate security</a> solutions.
+    </td></tr>
+    </table>
+</div>
+</div>
+</body>
+</html>
