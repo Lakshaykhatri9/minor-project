@@ -58,3 +58,9 @@ prevBtn.addEventListener('click', function () {
         slides[changeSlide].classList.add("show");
     }
 });
+
+
+function thankyou(event){
+    event.preventDefault();
+    window.location.href = 'thankyou.html';
+}
