@@ -69,10 +69,10 @@
 #slideContainer {
   width: 80vw; 
   margin: auto;
-  align-content: center;
   position: absolute;
   left: 50%;
-  top: 62%;
+  top: 90%;
+  margin-top: 13rem;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   padding-bottom: 10px;
@@ -200,7 +200,6 @@ img {
   font-size: 1.2em;
 }
 .container {
-  max-width: 1200px;
   margin: auto;
   display: flex;
   gap: 20px;
@@ -350,3 +349,4 @@ img {
   max-width: 1200px;
   margin: 0 auto;
 }
+
