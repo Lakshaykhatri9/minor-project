@@ -2,7 +2,9 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: "Inter", serif;
+  font-family: "Faculty Glyphic", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hamburger{
@@ -64,6 +66,21 @@
 .logo-div{
   height: 6rem;
   width: 6rem;
+  animation: LogoRotate 1 3s;
+}
+
+.nav-list:hover{
+  animation: LogoRotate 1s 1;
+}
+
+@keyframes LogoRotate{
+  form{
+    transform: rotate(0);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
 }
 
 #slideContainer {

@@ -1,3 +1,5 @@
+let body = document.querySelector("body");
+
 function gradeWebsite() {
     const url = document.getElementById('websiteUrl').value.trim();
     const resultDiv = document.getElementById('result');
@@ -11,14 +13,18 @@ function gradeWebsite() {
     let grade = 'C';
     if (url.includes('secure') || url.startsWith('https')) {
       grade = 'A';
-    } else if (url.includes('fast')) {
+      body.style.backgroundColor = '#24ff2462';
+    } else if (url.includes('www')) {
       grade = 'B';
+      body.style.backgroundColor = '#fbff2462';
     }
 
-    else if(url.include){
-      grade
+    else if(url.includes){
+      grade = 'C'
+      body.style.backgroundColor = '#ff5324b2';
     }
 
     // Display result
     resultDiv.innerHTML = `The website <strong>${url}</strong> is graded: <span class="grade">${grade}</span>`;
   }
+

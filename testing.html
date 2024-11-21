@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Grading Tool</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="test.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,15 +12,17 @@
   <img src="images/logo.png" alt="logo" id="logo">
   <div class="container-2">
     <h1>Tool by FireWall</h1>
+    <form onsubmit="sendEmail(); reset(); return false;"></form>
     <input type="text" id="websiteUrl" placeholder="Enter Website URL">
-    <button onclick="gradeWebsite()">Evaluate Website</button>
+    <button onclick="gradeWebsite()" id="evaluate-btn" class="h-10">Evaluate Website</button>
     <div class="result" id="result"></div>
+</form>
   </div>
 
   <footer class="footer mt-40">
     <div class="footer-container">
         <div class="footer-logo">
-            <h1 class="text-white">FireWall</h1>
+            <p class="text-white">FireWall</p>
             <p>Promoting Data Protection</p>
             <p>1234 Street Name, New Delhi, India</p>
         </div>
@@ -74,6 +77,7 @@
         <p>© 2024 FireWall. All Rights Reserved</p>
     </div>
 </footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="test.js"></script>
 </body>
 </html>

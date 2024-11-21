@@ -60,7 +60,22 @@ prevBtn.addEventListener('click', function () {
 });
 
 
-function thankyou(event){
+function sendEmail(){
+    Email.send({
+      Host : "smtp.gmail.com",
+      Username : "lk2417684@gmail.com",
+      Password : "lakshay@920",
+      To : 'lakshaykhatri777@gmail.com',
+      From : document.querySelector("#email").value,
+      Subject : "Enquiry",
+      Body : "And this is the body"
+  }).then(
+    message => alert(message)
+  );
+  }
+
+
+  function thankyou(event){
     event.preventDefault();
     window.location.href = 'thankyou.html';
 }

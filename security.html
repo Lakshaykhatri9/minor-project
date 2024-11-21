@@ -5,101 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cybersecurity Safety Tips</title>
   <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+   body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
 
-    /* Body Styling */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f9;
-      color: #333;
-      line-height: 1.6;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
-    /* Container Styling */
-    .container {
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      max-width: 800px;
-      width: 100%;
-      padding: 20px;
-    }
+header h1 {
+    text-align: center;
+    color: #0078d4;
+    margin-bottom: 1.5rem;
+}
 
-    /* Header Styling */
-    h1 {
-      font-size: 2rem;
-      color: #1e88e5;
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
+main ol {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+}
 
-    /* List Styling */
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
+main ol li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
 
-    li {
-      background: #e3f2fd;
-      color: #555;
-      border-radius: 5px;
-      margin-bottom: 10px;
-      padding: 15px;
-      border-left: 5px solid #1e88e5;
-    }
+main ol li strong {
+    color: #0078d4;
+}
 
-    li h2 {
-      font-size: 1.2rem;
-      color: #333;
-      margin-bottom: 0.5rem;
-    }
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+}
 
-    li p {
-      font-size: 1rem;
-    }
+footer p {
+    margin: 0;
+}
+
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Cybersecurity Safety Tips</h1>
-    <ul>
-      <li>
-        <h2>1. Use Strong Passwords</h2>
-        <p>Create unique and complex passwords for each account. Avoid using personal information or common words, and use a mix of letters, numbers, and symbols.</p>
-      </li>
-      <li>
-        <h2>2. Enable Two-Factor Authentication (2FA)</h2>
-        <p>Enable 2FA wherever possible to add an extra layer of security to your accounts. This requires a second verification step beyond just a password.</p>
-      </li>
-      <li>
-        <h2>3. Avoid Phishing Scams</h2>
-        <p>Be cautious with emails and messages from unknown senders. Look for signs of phishing, such as unusual links or attachments, and don't share personal information.</p>
-      </li>
-      <li>
-        <h2>4. Keep Software Updated</h2>
-        <p>Ensure your operating system, applications, and antivirus software are regularly updated to protect against the latest security threats.</p>
-      </li>
-      <li>
-        <h2>5. Use a VPN on Public Wi-Fi</h2>
-        <p>When using public Wi-Fi, consider using a VPN to secure your internet connection and protect your data from potential eavesdroppers.</p>
-      </li>
-      <li>
-        <h2>6. Backup Important Data</h2>
-        <p>Regularly back up important files to an external drive or secure cloud storage in case of data loss due to cyberattacks.</p>
-      </li>
-    </ul>
-  </div>
-
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Website Security Tips</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <div class="container">
+          <header>
+              <h1>Website Security Tips</h1>
+          </header>
+          <main>
+              <ol>
+                  <li><strong>Use HTTPS:</strong> Secure your website with SSL/TLS to encrypt data between users and servers.</li>
+                  <li><strong>Sanitize User Input:</strong> Prevent SQL injection and XSS attacks by validating and sanitizing inputs.</li>
+                  <li><strong>Implement Strong Passwords:</strong> Enforce strong passwords for users and administrators.</li>
+                  <li><strong>Keep Software Updated:</strong> Regularly update CMS, plugins, and libraries to patch vulnerabilities.</li>
+                  <li><strong>Use a Web Application Firewall (WAF):</strong> Protect against common threats like SQL injection and cross-site scripting.</li>
+                  <li><strong>Enable Multi-Factor Authentication (MFA):</strong> Add an extra layer of security to user accounts.</li>
+                  <li><strong>Monitor for Suspicious Activity:</strong> Use logs and alerts to detect and respond to potential attacks.</li>
+                  <li><strong>Backup Regularly:</strong> Create regular backups to recover from data loss or ransomware attacks.</li>
+                  <li><strong>Limit File Uploads:</strong> Validate and scan uploaded files to prevent malicious code execution.</li>
+                  <li><strong>Restrict Admin Access:</strong> Use IP whitelisting and least-privilege principles for admin areas.</li>
+              </ol>
+          </main>
+          <footer>
+              <p>Stay vigilant and protect your website from threats!</p>
+          </footer>
+      </div>
+  </body>
+  </html>
+  
 </body>
 </html>
