@@ -105,7 +105,8 @@
     </div>
 
     <h2>Send us a Message</h2>
-    <form class="contact-form" onsubmit="thankyou(event)" onsubmit="sendEmail(); reset(); return false;">
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="6dd7aff4-820d-4255-9d34-3c580c2e3c4a">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" placeholder="Your name" required>
 
